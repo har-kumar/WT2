@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>BIO DATA</title>
+<style>
+  
+<link rel="stylesheets" href="style sheet">
+ .page {
+  width: 100%;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden; 
+}
+  .left {
+    float: left;
+    width: 30%; 
+    background-color: #6e0765; 
+    color: #ffffff;
+    padding: 20px;
+    box-sizing: border-box; 
+    height: 100vh; 
+  }
+.right {
+  float: right;
+  width: 70%; 
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px; 
+  box-sizing: border-box;
+  height: 100vh;
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Set flex direction to column */
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+}
+
+    .left h2 {
+    cursor: pointer;
+  }
+
+   .right > div {
+    display: none;
+  }
+
+  .profile-image {
+    width: 150px; 
+    border: 5px solid black;
+    border-radius: 50%; 
+  }
+
+  /* Added styles for bold, big size, shadow, and color */
+  .right h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #6e0765;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+
+  /* Added hover effect for links */
+  a:hover {
+    color: #ff4081;
+  }
+</style>
+</head>
+<body>
+
+<div class="left">
+  <img src="C:\Users\harin\OneDrive\Documents\web technology\hari.png" alt="Profile Image" class="profile-image">
+  <h2 onclick="showDetails('contact')">Contact</h2>
+  <h2 onclick="showDetails('edu')">Educational Qualification</h2>
+  <h2 onclick="showDetails('papers')">Papers Presented</h2>
+  <h2 onclick="showDetails('skills')">Skills</h2>
+  <h2 onclick="showDetails('strength')">Strength & Weakness</h2>
+  <p><b>PERSONAL DETAILS LINK:</b> <a href="file:///C:/Users/harin/OneDrive/Documents/web%20technology/html.html">Click Here</a></p>
+</div>
+
+<div class="right" id="details">
+  <div id="contact">
+    <h1>CONTACT</h1>
+    <p><b>NAME:</b> Harini K</p>
+    <p><b>ADDRESS:</b> MGR Nagar, Palayajeyankondam, KR Puram(Tk), Karur(Dt).</p>
+    <p><b>EMAIL ID:</b> harinik.22it@kongu.edu</p>
+    <p><b>PHONE NO:</b> 9080850274</p>
+  </div>
+  <div id="edu">
+    <h1>Educational Qualification</h1>
+    <table border="1">
+      <tr>
+        <th>S.NO</th>
+        <th>NAME OF THE SCHOOL/COLLEGE</th>
+        <th>ACADEMIC</th>
+        <th>PERCENTAGE/CGPA</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Karur Saraswathi Vidhyalaya</td>
+        <td>10th</td>
+        <td>93%</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Karur Saraswathi Vidhyalaya</td>
+        <td>12th</td>
+        <td>91%</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Kongu Engineering College</td>
+        <td>B.Tech IT</td>
+        <td>8.45 CGPA</td>
+      </tr>
+    </table>
+  </div>
+  <div id="papers">
+    <h1>Papers Presented</h1>
+    <ol>
+      <li><b>CHATBOT</b>: Kongu Engineering College</li><br>
+      <li><b>5G TECHNOLOGY</b>: Kongu Engineering College</li><br>
+      <li><b>VIRTUAL REALITY</b>: KSR College of Engineering</li><br>
+      <li><b>BRAIN FINGERPRINTING</b>: Coimbatore Institute of Technology</li><br>
+    </ol>
+  </div>
+  <div id="skills">
+    <h1>Skills</h1>
+    <ol>
+      <li><b>PROGRAMMING LANGUAGES</b>: C, Java, & Python</li><br>
+      <li><b>SOFT SKILLS</b>: Communication, Problem Solving</li><br>
+      <li><b>TECHNICAL SKILLS</b>: Web Development, DBMS</li><br>
+    </ol>
+  </div>
+  <div id="strength">
+    <h1>Strength & Weakness</h1>
+    <p><b>STRENGTH:</b> My strength is I am self-motivated person and I am very optimistic in every situation.</p><br>
+    <p><b>WEAKNESS:</b> My weakness is I just can't keep anything half done. If some work is pending, I just go on working on it and that sometimes affects my other work routine.</p><br>
+  </div>
+</div>
+
+<script>
+  function showDetails(section) {
+    var sections = document.querySelectorAll('.right > div');
+    for (var i = 0; i < sections.length; i++) {
+      sections[i].style.display = 'none';
+    }
+    document.getElementById(section).style.display = 'block';
+  }
+  document.getElementById('contact').style.display = 'block';
+</script>
+
+</body>
+</html>
