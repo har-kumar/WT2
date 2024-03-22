@@ -1,76 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>BIO DATA</title>
-<style>
-  
-<link rel="stylesheets" href="style sheet">
- .page {
-  width: 100%;
-  margin: 0 auto;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  overflow: hidden; 
-}
-  .left {
-    float: left;
-    width: 30%; 
-    background-color: #6e0765; 
-    color: #ffffff;
-    padding: 20px;
-    box-sizing: border-box; 
-    height: 100vh; 
-  }
-.right {
-  float: right;
-  width: 70%; 
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 20px; 
-  box-sizing: border-box;
-  height: 100vh;
-  display: flex; /* Use flexbox */
-  flex-direction: column; /* Set flex direction to column */
-  justify-content: center; /* Center vertically */
-  align-items: center; /* Center horizontally */
-}
-
-    .left h2 {
-    cursor: pointer;
-  }
-
-   .right > div {
-    display: none;
-  }
-
-  .profile-image {
-    width: 150px; 
-    border: 5px solid black;
-    border-radius: 50%; 
-  }
-
-  /* Added styles for bold, big size, shadow, and color */
-  .right h1 {
-    font-size: 36px;
-    font-weight: bold;
-    color: #6e0765;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  }
-
-  /* Added hover effect for links */
-  a:hover {
-    color: #ff4081;
-  }
-</style>
+  <title>BIO DATA</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
 
 <div class="left">
-  <img src="hari.png" alt="Profile Image" class="profile-image">
+  <img src="C:\Users\harin\OneDrive\Documents\web technology\hari.jpg" alt="Profile Image" class="profile-image">
   <h2 onclick="showDetails('contact')">Contact</h2>
   <h2 onclick="showDetails('edu')">Educational Qualification</h2>
   <h2 onclick="showDetails('papers')">Papers Presented</h2>
   <h2 onclick="showDetails('skills')">Skills</h2>
   <h2 onclick="showDetails('strength')">Strength & Weakness</h2>
-  <p><b>PERSONAL DETAILS LINK:</b> <a href="html.html">Click Here</a></p>
+  <p><b>PERSONAL DETAILS LINK:</b> <a href="file:///C:/Users/harin/OneDrive/Documents/web%20technology/html.html">Click Here</a></p>
 </div>
 
 <div class="right" id="details">
